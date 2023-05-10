@@ -1,5 +1,7 @@
 # EE_596_NLP_Project1
 # Sentiment Analysis with Logistic Regression
+## Prof. Chandra Bhagavatula
+## Student: Naif A. Ganadily
 This repository contains the implementation of a sentiment analysis model using logistic regression. The project is divided into three parts:
 
 * Part 1: Basic implementation of logistic regression.
