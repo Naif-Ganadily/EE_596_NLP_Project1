@@ -1,5 +1,5 @@
 # EE_596_NLP_Project1
-# Sentiment Analysis with Logistic Regression
+# Sentiment Analysis using Machine Learning and Deep Learning
 ### Prof. Chandra Bhagavatula
 ### Student: Naif A. Ganadily
 This repository contains the implementation of a sentiment analysis model using logistic regression. The project is divided into three parts:
@@ -38,7 +38,7 @@ In this part, a basic logistic regression model is implemented using PyTorch. Th
 In this part, the bag of words representation is used to represent the movie reviews. Each review is represented as a vector with the same length as the vocabulary, with each element in the vector corresponding to the count of a specific word in the review. The logistic regression model is then applied on this representation.
 
 ## * Part 3: Logistic Regression with Pretrained Word Embeddings
-In this part, pretrained word embeddings (GloVe) are used to represent the movie reviews. Each review is represented as the sum of its word vectors. A linear layer is applied on top of the sentence representation, and logistic regression is performed.
+In this part, pretrained word embeddings (GloVe) are used to represent the movie reviews. Each review is represented as the sum of its word vectors. A linear layer is applied on top of the sentence representation, and logistic regression is performed, leveraging deep learning methodologies.
 
 ## Evaluation Metrics
 The models are evaluated using the following metrics:
@@ -48,5 +48,5 @@ The models are evaluated using the following metrics:
 * Recall
 
 ## Results
-Training and validation loss, accuracy, precision, and recall are plotted for each model. The models are tested on the test dataset, and the confusion matrix, precision-recall curve, and ROC curve are visualized.
+Training and validation loss, accuracy, precision, and recall are plotted for each model. The models are tested on the test dataset, and the confusion matrix, precision-recall curve, and ROC curve are visualized. Through deep learning and logistic regression, these models provide insightful approaches to sentiment analysis.
 
