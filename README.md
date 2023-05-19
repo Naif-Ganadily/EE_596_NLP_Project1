@@ -1,12 +1,15 @@
 # EE_596_NLP_Project1
-# Sentiment Analysis using Machine Learning and Deep Learning
+# Sentiment Analysis with Logistic Regression and Deep Learning: A First Deep Dive into NLP
 ### Prof. Chandra Bhagavatula
 ### Student: Naif A. Ganadily
 This repository contains the implementation of a sentiment analysis model using logistic regression. The project is divided into three parts:
 
-* Part 1: Basic implementation of logistic regression.
-* Part 2: Implementation of logistic regression with bag of words representation.
-* Part 3: Implementation of logistic regression with pretrained word embeddings (GloVe).
+
+Part 1: Basic implementation of logistic regression using Scikit-Learn.
+Part 2: Deep Learning approach to sentiment analysis using PyTorch.
+Part 3: Implementation of Logistic Regression with pre-trained Word Embeddings (GloVe).
+
+
 
 ## Dependencies
 - Python 3.6+
@@ -32,13 +35,13 @@ The text data is preprocessed by:
 
 ## Models
 ## * Part 1: Basic Logistic Regression
-In this part, a basic logistic regression model is implemented using PyTorch. The model takes a simple input feature (e.g., word count) and predicts the sentiment of the movie review (positive or negative).
+In this part, a basic logistic regression model is implemented using Scikit-Learn. The model takes a Bag of Words (BoW) representation of the movie reviews and predicts the sentiment of the movie review (positive or negative).
 
-## * Part 2: Logistic Regression with Bag of Words
-In this part, the bag of words representation is used to represent the movie reviews. Each review is represented as a vector with the same length as the vocabulary, with each element in the vector corresponding to the count of a specific word in the review. The logistic regression model is then applied on this representation.
+## * Part 2: Deep Learning Approach with PyTorch
+In this part, I have used PyTorch to create a deep learning-based logistic regression model for sentiment analysis. The model is trained using backpropagation over a set number of epochs. During training, cross-validation is performed to monitor the validation loss and the best model is saved. The performance of the model is then evaluated on the validation and test datasets.
 
 ## * Part 3: Logistic Regression with Pretrained Word Embeddings
-In this part, pretrained word embeddings (GloVe) are used to represent the movie reviews. Each review is represented as the sum of its word vectors. A linear layer is applied on top of the sentence representation, and logistic regression is performed, leveraging deep learning methodologies.
+In the third part, pretrained word embeddings (GloVe) are used to represent the movie reviews. Each review is represented as the sum of its word vectors. A logistic regression model is applied on this representation, and its performance is evaluated on the validation and test datasets.
 
 ## Evaluation Metrics
 The models are evaluated using the following metrics:
@@ -48,5 +51,7 @@ The models are evaluated using the following metrics:
 * Recall
 
 ## Results
-Training and validation loss, accuracy, precision, and recall are plotted for each model. The models are tested on the test dataset, and the confusion matrix, precision-recall curve, and ROC curve are visualized. Through deep learning and logistic regression, these models provide insightful approaches to sentiment analysis.
+Training, validation loss and accuracy, precision, and recall are tracked for each model. The models are tested on the test dataset, and the confusion matrix, precision-recall curve, and ROC curve are visualized.
 
+## Conclusion
+The project provides a comprehensive look into implementing sentiment analysis using traditional machine learning and deep learning approaches, illustrating the entire pipeline from preprocessing the text data, converting it into numerical format, training the model, to evaluating its performance. Both traditional logistic regression and deep learning approaches deliver competitive results, and the usage of pretrained word embeddings in the third part further enhances the model's performance.
